@@ -1,0 +1,23 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: cloud-provider-payment
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://114.55.234.204:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: amane
+    password: XTxt1234
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  type-aliases-package: com.amane.springcloud.eneities
+

@@ -1,0 +1,25 @@
+server:
+  port: 80
+eureka:
+  client:
+    service-url:
+      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+    register-with-eureka: false
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+logging:
+  level:
+    #feign监控哪个类，以什么级别记录日志
+    com.amane.springcloud.service.ConsumerFeignService: debug
+feign:
+  hystrix:
+    enabled: true #attention：注意此配置的作用是把所有标有@FeignClient的类下的所有方法加上一个默认的1s超时时间（类似于在这些方法上加了一个@HystrixCommand）
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
