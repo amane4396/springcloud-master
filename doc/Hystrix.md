@@ -188,6 +188,40 @@ public interface ConsumerFeignService {
 
 ​																					（即使是整数返回的还是调用了fallback方法）
 
+***dashboard***
+
+****
+
+添加依赖
+
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+```
+
+主启动类添加注解@EnableHystrixDashboard
+
+如果不行就添加
+
+```java
+@Bean
+public ServletRegistrationBean getServlet(){
+    HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
+    ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(streamServlet);
+    servletRegistrationBean.setLoadOnStartup(1);
+    servletRegistrationBean.addUrlMappings("/hystrix.stream");
+    servletRegistrationBean.setName("HystrixMetricsStreamServlet");
+    return servletRegistrationBean;
+}
+```
+
 
 
 注意：
