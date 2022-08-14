@@ -42,5 +42,5 @@ https://www.consul.io/downloads
 
 6、ip:8500访问consul
 
-![image-20220810182323234](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220810182323234.png)
+![image-20220810182323234](..\imgs\image-20220810182323234.png)
 

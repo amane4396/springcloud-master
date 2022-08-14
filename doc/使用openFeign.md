@@ -86,7 +86,7 @@ ribbon:
 
 *日志打印级别*
 
-![image-20220813151033066](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220813151033066.png)
+![image-20220813151033066](..\imgs\image-20220813151033066.png)
 
 ①添加bean
 
@@ -111,5 +111,5 @@ logging:
 
 效果：
 
-![image-20220813151836961](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220813151836961.png)
+![image-20220813151836961](..\imgs\image-20220813151836961.png)
 

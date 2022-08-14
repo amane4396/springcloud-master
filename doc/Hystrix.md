@@ -145,7 +145,7 @@ public interface ConsumerFeignService {
 
 3、yaml配置
 
-![image-20220814143315509](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220814143315509.png)
+![image-20220814143315509](..\imgs\image-20220814143315509.png)
 
 
 
@@ -155,7 +155,7 @@ public interface ConsumerFeignService {
 
 **原理图：**
 
-![image-20220814162405869](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220814162405869.png)
+![image-20220814162405869](..\imgs\image-20220814162405869.png)
 
 1、给服务端方法service上加上注解和添加commandProperties，其中commandProperties的配置信息和默认值在类HystrixCommandProperties中可查
 
@@ -184,7 +184,7 @@ public interface ConsumerFeignService {
     }
 ```
 
-![image-20220814162818796](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220814162818796.png)
+![image-20220814162818796](..\imgs\image-20220814162818796.png)
 
 ​																					（即使是整数返回的还是调用了fallback方法）
 
@@ -192,4 +192,4 @@ public interface ConsumerFeignService {
 
 注意：
 
-![image-20220814020920601](C:\Users\amane\AppData\Roaming\Typora\typora-user-images\image-20220814020920601.png)
+![image-20220814020920601](..\imgs\image-20220814020920601.png)
