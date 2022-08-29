@@ -1,0 +1,3 @@
+GET http://localhost:9527/payment/lb/port
+Cookie: username=amane
+

@@ -76,7 +76,7 @@ public class PaymentController {
         return RespBean.success("端口号："+serverPort, payment);
     }
 
-    @GetMapping("/lb/getPort")
+    @GetMapping("/lb/port")
     public String getPort(){
         return serverPort;
     }
