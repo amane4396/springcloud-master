@@ -16,8 +16,11 @@ spring:
       server:
         git:
           #git仓库地址
-          uri:
+          uri: https://github.com/amane4396/springcloud-master.git
           #搜索的目录
           search-paths:
+            - config
+          username: amane4396
+          password: XTxt1234
       #读取的分支
       label: master
