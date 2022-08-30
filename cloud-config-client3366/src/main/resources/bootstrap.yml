@@ -10,7 +10,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 spring:
   application:
-    name: cloud-config-client3366
+    name: cloud-config-client
   cloud:
     config:
       label: master #分支
