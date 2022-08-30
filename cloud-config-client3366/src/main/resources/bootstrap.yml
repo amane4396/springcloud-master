@@ -1,5 +1,5 @@
 server:
-  port: 3355
+  port: 3366
 eureka:
   instance:
     hostname: cloud-config-client #服务端的实例名称
@@ -10,7 +10,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 spring:
   application:
-    name: cloud-config-client
+    name: cloud-config-client3366
   cloud:
     config:
       label: master #分支

@@ -24,3 +24,15 @@ spring:
           password: XTxt1234
       #读取的分支
       label: master
+  rabbitmq:
+    host: 114.55.234.204
+    port: 5672
+    username: guest
+    password: guest
+
+##rabbitmq相关配置，暴露bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
