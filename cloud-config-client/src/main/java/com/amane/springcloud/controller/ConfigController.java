@@ -1,6 +1,7 @@
 package com.amane.springcloud.controller;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,9 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2022/8/30 13:42:06
  */
 @RestController
+@RefreshScope
 public class ConfigController {
 
-    @Value("config.name")
+    @Value("${config.name}")
     private String config;
 
     @GetMapping("/info")

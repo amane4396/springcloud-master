@@ -17,3 +17,9 @@ spring:
       name: config #配置名称
       profile: dev #后缀
       uri: http://localhost:3344 #配置中心地址
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: "*"
